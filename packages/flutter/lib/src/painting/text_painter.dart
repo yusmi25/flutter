@@ -618,7 +618,7 @@ class TextPainter {
   }
 
   void _layoutParagraph(double minWidth, double maxWidth) {
-    _paragraph!.layout(ui.ParagraphConstraints(width: maxWidth));
+      _paragraph!.layout(ui.ParagraphConstraints(width: maxWidth));
     if (minWidth != maxWidth) {
       double newWidth;
       switch (textWidthBasis) {
